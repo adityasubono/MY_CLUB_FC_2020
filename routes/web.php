@@ -17,8 +17,22 @@ use Illuminate\Support\Facades\Route;
 //    return view('welcome');
 //});
 
-
+//Route Home
 Route::get('/', 'HomeController@index');
 
 //Route Clubs
 Route::get('/club', 'ClubsController@index');
+
+//Route Schedule
+Route::get('/schedule', 'ScheduleController@index');
+
+//Route Result
+Route::get('/result', 'ResultController@index');
+
+//Route Article
+Route::get('/article', 'ArticleController@index');
+
+//Route contact
+Route::get('/contact', 'ContactController@index');
+
+

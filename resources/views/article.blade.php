@@ -1,6 +1,6 @@
 @extends('layouts/main')
 
-@section('title', 'Club')
+@section('title', 'Article')
 
 @section('container-fluid')
 

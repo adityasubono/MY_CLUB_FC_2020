@@ -1,15 +1,15 @@
 @extends('layouts/main')
 
-@section('title', 'Club')
+@section('title', 'Result')
 
 @section('container-fluid')
 
 <!-- Hero Section Begin -->
-@include('club.hero.hero_club')
+@include('result.hero.hero_result')
 <!-- Hero Section End -->
 
 <!-- Info Club News Section Begin -->
-@include('club.info_club.info_club')
+@include('result.info_result.info_result')
 <!-- Info Club Section End -->
 
 

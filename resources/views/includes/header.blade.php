@@ -37,7 +37,7 @@
                             <li class="active"><a href="/">Home</a></li>
                             <li><a href="/club">Club</a></li>
                             <li><a href="/schedule">Schedule</a></li>
-                            <li><a href="/results">Results</a></li>
+                            <li><a href="/result">Results</a></li>
                             <li><a href="/article">Article</a>
                                 <ul class="dropdown">
                                     <li><a href="./blog.html">Blog</a></li>

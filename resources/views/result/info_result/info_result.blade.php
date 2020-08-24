@@ -51,7 +51,8 @@
                                 </td>
                                 <td class="st-option">
                                     <div class="so-text"><b>Matchday {{$loop->iteration}}</b>
-                                        <br>{{$result->stadium}}</div>
+                                        <br>{{$result->stadium}}
+                                    </div>
                                     <h4>{{$result->skor_home}} : {{$result->skor_away}}</h4>
                                     <h4>WIN : LOSE</h4>
                                     <div class="so-text">{{$result->date}} {{$result->time}}</div>
@@ -75,7 +76,8 @@
                                 </td>
                                 <td class="st-option">
                                     <div class="so-text"><b>Matchday {{$loop->iteration}}</b><br>
-                                        {{$result->stadium}}</div>
+                                        {{$result->stadium}}
+                                    </div>
                                     <h4>{{$result->skor_home}} : {{$result->skor_away}}</h4>
                                     <h4>DRAW</h4>
                                     <div class="so-text">{{$result->date}} {{$result->time}}</div>
@@ -99,7 +101,8 @@
                                 </td>
                                 <td class="st-option">
                                     <div class="so-text"><b>Matchday {{$loop->iteration}}</b><br>
-                                        {{$result->stadium}}</div>
+                                        {{$result->stadium}}
+                                    </div>
                                     <h4>{{$result->skor_home}} : {{$result->skor_away}}</h4>
                                     <h4>LOSE : WIN</h4>
                                     <div class="so-text">{{$result->date}} {{$result->time}}</div>
@@ -124,20 +127,28 @@
                 <div class="schedule-sidebar">
                     <div class="ss-widget">
                         <div class="section-title sidebar-title">
-                            <h5>Schedule</h5>
+                            <h5>Table</h5>
                         </div>
-                        <ul>
-                            <li><a href="#">Saturday, 15 June 2019</a></li>
-                            <li><a href="#">Sunday, 16 June 2019</a></li>
-                            <li><a href="#">Monday, 17 June 2019</a></li>
-                            <li><a href="#">Tuesday, 18 June 2019</a></li>
-                            <li><a href="#">Wednesday, 19 June 2019</a></li>
-                            <li><a href="#">Thursday, 20 June 2019</a></li>
-                            <li><a href="#">Friday, 21 June 2019</a></li>
-                            <li><a href="#">Saturday, 22 June 2019</a></li>
-                            <li><a href="#">Sunday, 23 June 2019</a></li>
-                            <li><a href="#">Monday, 24 June 2019</a></li>
-                        </ul>
+                        <table class="table table-sm">
+                            <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Club</th>
+                                <th scope="col">Play</th>
+                                <th scope="col">Pts</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            @foreach($data_standing as $standing)
+                            <tr>
+                                <th scope="row">{{$loop->iteration}}</th>
+                                <td>{{$standing->club}}</td>
+                                <td>{{$standing->played}}</td>
+                                <td>{{$standing->points}}</td>
+                            </tr>
+                            @endforeach
+                            </tbody>
+                        </table>
                     </div>
                     <div class="ss-league">
                         <div class="section-title sidebar-title">

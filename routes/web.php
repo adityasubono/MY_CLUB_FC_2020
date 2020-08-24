@@ -30,6 +30,9 @@ Route::get('/schedule', 'ScheduleController@index');
 Route::get('/result', 'ResultController@index');
 Route::post('/result', 'ResultController@store');
 
+//Route Standing
+//Route::post('/result', 'StandingsController@store');
+
 //Route Article
 Route::get('/article', 'ArticleController@index');
 

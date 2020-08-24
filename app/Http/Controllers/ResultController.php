@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Result;
+use App\Standing;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
@@ -15,8 +16,9 @@ class ResultController extends Controller
      */
     public function index()
     {
+        $data_standing = Standing::all()->sortByDesc('points');
         $data_result = DB::table('results')->paginate(5);
-        return view('result', compact('data_result'));
+        return view('result', compact('data_result','data_standing'));
     }
 
     /**
@@ -103,6 +105,49 @@ class ResultController extends Controller
             'time' => $request->time,
             'stadium' => $request->stadium
         ]);
+        $points_win  =3;
+        $points_draw =1;
+        $points_lose =0;
+        $played = 1;
+        if($gol_home > $gol_away){
+
+            $data = Standing::find(1);
+            $data->played += $played;
+            $data->points += $points_win;
+            $data->save();
+
+
+            $data = Standing::find(2);
+            $data->played += $played;
+            $data->points += $points_lose;
+            $data->save();
+
+        }elseif ($gol_home < $gol_away) {
+
+            $data = Standing::find(1);
+            $data->played += $played;
+            $data->points += $points_lose;
+            $data->save();
+
+            $data = Standing::find(2);
+            $data->played += $played;
+            $data->points += $points_win;
+            $data->save();
+
+        }elseif($gol_home == $gol_away){
+            $played = 1;
+            $data = Standing::find(1);
+            $data->played += $played;
+            $data->points += $points_draw;
+            $data->save();
+
+            $data = Standing::find(2);
+            $data->played += $played;
+            $data->points += $points_draw;
+            $data->save();
+        }
+
+
 
         return redirect()->action('ResultController@index');
     }

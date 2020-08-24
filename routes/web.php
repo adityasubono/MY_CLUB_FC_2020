@@ -28,6 +28,7 @@ Route::get('/schedule', 'ScheduleController@index');
 
 //Route Result
 Route::get('/result', 'ResultController@index');
+Route::post('/result', 'ResultController@store');
 
 //Route Article
 Route::get('/article', 'ArticleController@index');

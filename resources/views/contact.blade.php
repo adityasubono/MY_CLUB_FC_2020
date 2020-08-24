@@ -5,11 +5,11 @@
 @section('container-fluid')
 
 <!-- Hero Section Begin -->
-@include('club.hero.hero_club')
+@include('contact.map.map')
 <!-- Hero Section End -->
 
 <!-- Info Club News Section Begin -->
-@include('club.info_club.info_club')
+@include('contact.info_contact.info_contact')
 <!-- Info Club Section End -->
 
 

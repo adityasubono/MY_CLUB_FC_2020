@@ -35,8 +35,22 @@
                     <div class="nav-menu">
                         <ul class="main-menu">
                             <li class="active"><a href="/">Home</a></li>
-                            <li><a href="/club">Club</a></li>
-                            <li><a href="/schedule">Schedule</a></li>
+                            <li><a href="/club">Club</a>
+                                <ul class="dropdown">
+                                    <li><a href="/continent">Create Continent</a></li>
+                                    <li><a href="/country">Create Country</a></li>
+                                    <li><a href="/club">Create Club</a></li>
+                                    <li><a href="">Player</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="/schedule">Schedule</a>
+                                <ul class="dropdown">
+                                    <li><a href="./blog.html">Blog</a></li>
+                                    <li><a href="./blog-details.html">Blog Details</a></li>
+                                    <li><a href="#">Schedule</a></li>
+                                    <li><a href="#">Results</a></li>
+                                </ul>
+                            </li>
                             <li><a href="/result">Results</a></li>
                             <li><a href="/article">Article</a>
                                 <ul class="dropdown">

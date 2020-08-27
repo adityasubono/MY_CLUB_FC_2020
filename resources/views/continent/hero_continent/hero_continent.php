@@ -3,7 +3,7 @@
         <div class="row">
             <div class="col-lg-12">
                 <div class="bs-text">
-                    <h2>Match Schedule</h2>
+                    <h2>Continent</h2>
                 </div>
             </div>
         </div>

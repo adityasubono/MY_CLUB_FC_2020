@@ -20,6 +20,16 @@ use Illuminate\Support\Facades\Route;
 //Route Home
 Route::get('/', 'HomeController@index');
 
+//Route Continent
+Route::get('/continent', 'ContinentController@index');
+Route::post('/continent', 'ContinentController@store');
+Route::get('/continent/dataTable', 'ContinentController@dataTable');
+
+//Route Country
+Route::get('/country', 'CountryController@index');
+
+
+
 //Route Clubs
 Route::get('/club', 'ClubsController@index');
 

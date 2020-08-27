@@ -23,6 +23,8 @@ Route::get('/', 'HomeController@index');
 //Route Continent
 Route::get('/continent', 'ContinentController@index');
 Route::post('/continent', 'ContinentController@store');
+Route::put('/continent/{id}', 'ContinentController@update');
+Route::delete('/continent/{id}', 'ContinentController@destroy');
 Route::get('/continent/dataTable', 'ContinentController@dataTable');
 
 //Route Country

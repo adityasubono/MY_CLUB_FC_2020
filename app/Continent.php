@@ -6,6 +6,8 @@ use Illuminate\Database\Eloquent\Model;
 
 /**
  * @method static create(array $array)
+ * @method static where()
+ * @method static firstOrCreate(string $string)
  */
 class Continent extends Model
 {

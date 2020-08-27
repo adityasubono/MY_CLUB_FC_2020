@@ -84,21 +84,36 @@ class ContinentController extends Controller
      *
      * @param \Illuminate\Http\Request $request
      * @param \App\Continent $continent
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Http\RedirectResponse|\Illuminate\Http\Response|\Illuminate\Routing\Redirector
      */
-    public function update(Request $request, Continent $continent)
+    public function update(Request $request, $id)
     {
         //
+        try {
+        Continent::where('id', $id)->update([
+            'name' => $request->name
+        ]);
+
+            return redirect('/continent')->with('status', 'Data Successfully Update');
+        } catch (\Exception $e) {
+            return redirect('/continent')->with('error', 'Data Not Successfully Update');
+        }
+
     }
 
     /**
      * Remove the specified resource from storage.
      *
      * @param \App\Continent $continent
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Http\RedirectResponse|\Illuminate\Http\Response|\Illuminate\Routing\Redirector
      */
-    public function destroy(Continent $continent)
+    public function destroy($id)
     {
-        //
+        try {
+            Continent::destroy('id',$id);
+            return redirect('/continent')->with('status', 'Data Successfully Delete');
+        } catch (\Exception $e) {
+            return redirect('/continent')->with('error', 'Data Not Successfully Delete');
+        }
     }
 }

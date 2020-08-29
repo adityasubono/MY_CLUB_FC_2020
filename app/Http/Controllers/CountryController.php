@@ -2,8 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Continent;
 use App\Country;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class CountryController extends Controller
 {
@@ -14,7 +16,14 @@ class CountryController extends Controller
      */
     public function index()
     {
-        return view('/country');
+        $dataContinent = Continent::all()->sortBy('name');
+        $dataAsia = DB::table('country')->where('continent_id','2')->orderBy('name')->paginate(10);
+        $dataAfrica =DB::table('country')->where('continent_id','3')->orderBy('name')->paginate(10);
+        $dataEuropa = DB::table('country')->where('continent_id','6')->orderBy('name')->paginate(10);
+        $dataAmerica = DB::table('country')->where('continent_id','5')->orderBy('name')->paginate(10);
+        $dataAustralia = DB::table('country')->where('continent_id','4')->orderBy('name')->paginate(10);
+        return view('/country', compact('dataContinent',
+            'dataAsia','dataAfrica','dataEuropa','dataAmerica','dataAustralia'));
     }
 
     /**
@@ -31,11 +40,24 @@ class CountryController extends Controller
      * Store a newly created resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Http\RedirectResponse|\Illuminate\Http\Response|\Illuminate\Routing\Redirector
      */
     public function store(Request $request)
     {
-        //
+//        dd($request->country);
+        try {
+            foreach ($request->country as $key => $value) {
+                Country::create($value);
+            }
+
+
+            return redirect('/country')->with('status', 'Data Country Successfully Insert');
+
+        } catch (\Exception $e) {
+            return redirect('/country')->with('error', 'Data Country Not Successfully Insert');
+        }
+
+
     }
 
     /**

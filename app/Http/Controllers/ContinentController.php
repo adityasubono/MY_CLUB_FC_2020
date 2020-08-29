@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Continent;
+use App\Country;
 use Illuminate\Http\Request;
 
 class ContinentController extends Controller
@@ -17,7 +18,8 @@ class ContinentController extends Controller
         //
 
         $dataContinent = Continent::all();
-        return view('/continent', compact('dataContinent'));
+        $dataCountry = Country::all()->sortBy('name');
+        return view('/continent', compact('dataContinent','dataCountry'));
     }
 
     public function dataTable()

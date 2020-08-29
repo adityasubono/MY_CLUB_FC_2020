@@ -29,6 +29,8 @@ Route::get('/continent/dataTable', 'ContinentController@dataTable');
 
 //Route Country
 Route::get('/country', 'CountryController@index');
+Route::post('/country', 'CountryController@store');
+
 
 
 

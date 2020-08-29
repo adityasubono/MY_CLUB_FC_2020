@@ -4,6 +4,10 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
+/**
+ * @method static create($value)
+ * @method static where(string $string)
+ */
 class Country extends Model
 {
     protected $table='country';

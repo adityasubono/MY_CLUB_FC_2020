@@ -5,7 +5,7 @@
                 <div class="col-lg-6">
                     <div class="ht-info">
                         <ul>
-                            <li>20:00 - May 19, 2019</li>
+                            <li>20:00 - Agustust 29, 2020</li>
                             <li><a href="#">Sign in</a></li>
                             <li><a href="#">Contact</a></li>
                         </ul>
@@ -40,24 +40,31 @@
                                     <li><a href="/continent">Create Continent</a></li>
                                     <li><a href="/country">Create Country</a></li>
                                     <li><a href="/club">Create Club</a></li>
-                                    <li><a href="">Player</a></li>
+                                    <li><a href="/continent">Create Stadium</a></li>
+                                    <li><a href="/country">Create Staf</a></li>
+                                    <li><a href="/club">Create Sponsor</a></li>
                                 </ul>
                             </li>
                             <li><a href="/schedule">Schedule</a>
                                 <ul class="dropdown">
-                                    <li><a href="./blog.html">Blog</a></li>
-                                    <li><a href="./blog-details.html">Blog Details</a></li>
-                                    <li><a href="#">Schedule</a></li>
-                                    <li><a href="#">Results</a></li>
+                                    <li><a href="">Create Schedule</a></li>
+                                    <li><a href="">Ranking Table</a></li>
+                                    <li><a href="">Gol And Assist</a></li>
+                                    <li><a href="">Macth Of The Match</a></li>
                                 </ul>
                             </li>
-                            <li><a href="/result">Results</a></li>
+                            <li><a href="/result">Results</a>
+                                <ul class="dropdown">
+                                    <li><a href="">Match Info </a></li>
+                                    <li><a href="">Transfer Player</a></li>
+                                    <li><a href="">Schedule</a></li>
+                                    <li><a href="">Results</a></li>
+                                </ul>
+                            </li>
                             <li><a href="/article">Article</a>
                                 <ul class="dropdown">
-                                    <li><a href="./blog.html">Blog</a></li>
-                                    <li><a href="./blog-details.html">Blog Details</a></li>
-                                    <li><a href="#">Schedule</a></li>
-                                    <li><a href="#">Results</a></li>
+                                    <li><a href="">News</a></li>
+                                    <li><a href="">Transfer Player</a></li>
                                 </ul>
                             </li>
                             <li><a href="/contact">Contact Us</a></li>

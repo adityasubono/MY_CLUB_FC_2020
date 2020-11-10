@@ -9,7 +9,7 @@
 <!-- Hero Section End -->
 
 <!-- Info Club News Section Begin -->
-@include('club.info_club.info_club')
+@include('club.create_club.create_club')
 <!-- Info Club Section End -->
 
 

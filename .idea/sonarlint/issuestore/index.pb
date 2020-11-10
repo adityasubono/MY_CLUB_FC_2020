@@ -115,3 +115,13 @@ b
 2public/assets/styles/continent/style_continent.css,7\a\7af7261ed6b44d14d3af8ef51093e8cde86be1bf
 M
 public/assets/form/country.js,b\2\b27f103e227bdae098730f5224a624222aee3b6d
+e
+5resources/views/country/info_country/europa.blade.php,d\6\d6d6ed14b6c5581000fb07eb18af8470cb9bd553
+f
+6resources/views/country/info_country/america.blade.php,3\4\34a5d16862de27f64046b7ac316d35b4fd0d7e61
+h
+8resources/views/country/info_country/australia.blade.php,5\7\5738fb13fc16ab9a0f010785668208e002342a23
+e
+5resources/views/country/info_country/africa.blade.php,b\4\b4eb6244d79546edba8b96164b76ccdaae5bae66
+c
+3resources/views/country/info_country/asia.blade.php,e\5\e5e92cecef3fd12631e62ce687a9c85e749a9e36

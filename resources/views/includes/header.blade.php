@@ -39,10 +39,7 @@
                                 <ul class="dropdown">
                                     <li><a href="/continent">Create Continent</a></li>
                                     <li><a href="/country">Create Country</a></li>
-                                    <li><a href="/club">Create Club</a></li>
-                                    <li><a href="/continent">Create Stadium</a></li>
-                                    <li><a href="/country">Create Staf</a></li>
-                                    <li><a href="/club">Create Sponsor</a></li>
+                                    <li><a href="/club">Create Club and Player</a></li>
                                 </ul>
                             </li>
                             <li><a href="/schedule">Schedule</a>

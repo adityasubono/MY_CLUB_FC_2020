@@ -17,5 +17,6 @@
     <link rel="stylesheet" href="../assets/css/slicknav.min.css" type="text/css">
     <link rel="stylesheet" href="../assets/css/style.css" type="text/css">
     <!-- DataTables -->
-
+    <script src="{{ asset('assets/js/jquery-3.3.1.min.js')}}"></script>
+    <script src="{{ asset('assets/js/jquery.slicknav.js')}}"></script>
 </head>

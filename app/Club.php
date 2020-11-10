@@ -8,6 +8,7 @@ class Club extends Model
 {
     //
     protected $table='clubs';
-    protected $fillable= ['name_club'];
+    protected $fillable= ['country_id','club_name','stadium','information'];
+
 
 }

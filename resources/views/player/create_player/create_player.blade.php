@@ -110,6 +110,7 @@
                 <div class="section-title sidebar-title">
                     <h5>Table Player </h5>
                 </div>
+                <a href="/statistics/{{$club->id}}" class="btn btn-outline-secondary mb-3" type="button">Statistics Player</a>
 
                 @foreach($players as $player)
 
@@ -119,8 +120,12 @@
                         </div>
                         <input type="text"
                                class="form-control"
-                               value="{{$player->name_player}}">
+                               value="{{$player->name_player}}"
+                               disabled>
+
                         <div class="input-group-append">
+                            <a href="" class="btn btn-outline-warning" type="button"><i class="fa fa-edit"></i></a>
+                            <button class="btn btn-outline-danger" type="button"><i class="fa fa-trash"></i></button>
                             <span class="input-group-text bg-info" style="width: 50px">{{$player->position}}</span>
                         </div>
                     </div>

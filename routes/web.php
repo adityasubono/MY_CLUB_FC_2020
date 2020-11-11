@@ -48,9 +48,17 @@ Route::post('/player-store', 'PlayersController@store');
 //Route Schedule
 Route::get('/schedule', 'ScheduleController@index');
 
+//Route Match
+Route::get('/match', 'MatchController@index');
+Route::post('/match-create', 'MatchController@create');
+
+
+
 //Route Result
 Route::get('/result', 'ResultController@index');
 Route::post('/result', 'ResultController@store');
+
+
 
 //Route Standing
 //Route::post('/result', 'StandingsController@store');

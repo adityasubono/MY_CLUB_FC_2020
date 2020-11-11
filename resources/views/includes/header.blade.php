@@ -35,14 +35,14 @@
                     <div class="nav-menu">
                         <ul class="main-menu">
                             <li class="active"><a href="/">Home</a></li>
-                            <li><a href="/club">Club</a>
+                            <li><a href="#">Club</a>
                                 <ul class="dropdown">
                                     <li><a href="/continent">Create Continent</a></li>
                                     <li><a href="/country">Create Country</a></li>
                                     <li><a href="/club">Create Club and Player</a></li>
                                 </ul>
                             </li>
-                            <li><a href="/schedule">Schedule</a>
+                            <li><a href="#">Schedule</a>
                                 <ul class="dropdown">
                                     <li><a href="">Create Schedule</a></li>
                                     <li><a href="">Ranking Table</a></li>
@@ -50,12 +50,10 @@
                                     <li><a href="">Macth Of The Match</a></li>
                                 </ul>
                             </li>
-                            <li><a href="/result">Results</a>
+                            <li><a href="#">Match</a>
                                 <ul class="dropdown">
-                                    <li><a href="">Match Info </a></li>
-                                    <li><a href="">Transfer Player</a></li>
-                                    <li><a href="">Schedule</a></li>
-                                    <li><a href="">Results</a></li>
+                                    <li><a href="/match">Create Match </a></li>
+                                    <li><a href="/result">Result Match</a></li>
                                 </ul>
                             </li>
                             <li><a href="/article">Article</a>
